@@ -15,6 +15,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'bootstrap-sass'
+
+gem 'sprockets'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
 
