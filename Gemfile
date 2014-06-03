@@ -15,6 +15,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'bcrypt-ruby'
+
 gem 'bootstrap-sass'
 
 gem 'sprockets'
