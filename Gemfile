@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails','2.13.1'
