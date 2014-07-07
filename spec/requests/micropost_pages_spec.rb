@@ -6,6 +6,23 @@ describe "MicropostPages" do
   let(:user) { FactoryGirl.create(:user) }
   before { sign_in user }
 
+  # describe "pagination of microposts" do
+  #   before do
+  #     visit root_path
+  #     90.times { FactoryGirl.create(:micropost, content: "sdgmprgv mepgbvwe", user: user) } 
+  #   end
+  #   it { should have_selector('div.pagination') }
+  # end
+
+  describe "micropost's count" do
+    before do
+      FactoryGirl.create(:micropost, content: "bla bla bla", user: user) 
+      visit root_path
+    end
+
+    it { should have_content("micropost") }
+  end
+
   describe "micropost destruction" do
     before { FactoryGirl.create(:micropost, user: user) }
     describe "as correct user" do
